@@ -42,6 +42,21 @@ body {
     color: #343434;
     font-size: 1.25em;
 }
+
+.therapistOption {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #343434;
+    float: left;
+    font-size: 1em;
+    margin-top: -2px;
+    padding-left: 10px;
+}
+
+.radio {
+    float: left;
+    margin-left: 5px;
+}
 .currentResponse {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
