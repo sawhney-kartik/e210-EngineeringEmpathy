@@ -148,11 +148,15 @@ if(isset($_POST['submit'])){
              <h3> Chat directly with a 24/7 counselor </h2>
             <p id="chatText"> Select one from the available counselors below.</p>
                 <form method="post">
-                    <input type="radio" name="options" id="Ronald C. Albucher, MD" value="Ronald C. Albucher, MD"> Ronald C. Albucher, MD
-                    <input type="radio" name="options" id="Laurel Zappert Banks, PsyD" value="Laurel Zappert Banks, PsyD"> Laurel Zappert Banks, PsyD
-                    <input type="radio" name="options" id="Naomi Brown, PhD" value="Naomi Brown, PhD"> Naomi Brown, PhD
-                    <input type="radio" name="options" id="Latoya C. Conner, PhD" value="Latoya C. Conner, PhD"> Latoya C. Conner, PhD
-                    <input type="radio" name="options" id="Ariana Davidson, LCSW" value="Ariana Davidson, LCSW"> Ariana Davidson, LCSW
+                    <input type="radio" class="radio" name="options" id="Ronald C. Albucher, MD" value="Ronald C. Albucher, MD"> <label class ="therapistOption"> Ronald C. Albucher, MD </label>
+                    <br>
+                    <input type="radio" class="radio" name="options" id="Laurel Zappert Banks, PsyD" value="Laurel Zappert Banks, PsyD"><label class ="therapistOption"> Laurel Zappert Banks, PsyD </label>
+                    <br>
+                    <input type="radio" class="radio" name="options" id="Naomi Brown, PhD" value="Naomi Brown, PhD"> <label class ="therapistOption"> Naomi Brown, PhD </label>
+                    <br>
+                    <input type="radio" class="radio"  name="options" id="Latoya C. Conner, PhD" value="Latoya C. Conner, PhD"><label class ="therapistOption"> Latoya C. Conner, PhD </label>
+                    <br>
+                    <input type="radio" class="radio"  name="options" id="Ariana Davidson, LCSW" value="Ariana Davidson, LCSW"> <label class ="therapistOption">Ariana Davidson, LCSW </label>
                 <br>
                 <input type="submit" class="btn" id="chatButton" name="submit" value="Chat now" /> 
                 </form>
