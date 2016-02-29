@@ -47,7 +47,8 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
     <style type="text/css">
         html { margin: 0em; padding: 0; }
         body { margin: 2em; padding: 0; font-family: sans-serif; font-size: medium; color: #333; }
-        h1 { margin: 0; padding: 0; font-size: 2em; }
+        h1 { margin: 0; padding: 0; font-size: 2em; font-family: 'Oswald', sans-serif;
+                font-weight: 400; }
         p.subtitle { margin: 0; padding: 0 0 0 0.125em; font-size: 0.77em; color: gray; }
         
         ul#messages { overflow: auto; height: 15em; margin: 1em 0; padding: 0 3px; list-style: none; border: 1px solid gray; }
@@ -61,8 +62,26 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
         form p input#name { width: 10em; }
         form p button { position: absolute; top: 0; right: -0.5em; }
         
-        ul#messages, form p, input#content { width: 40em; }
-        
+         ul#messages, form p { width: 40em; }
+        input#content {
+            width: 35em;
+        }
+     .btn {
+        margin-top: -35px;
+            background-color: #1FA5AB;
+            color: #fff;
+            text-align: center;
+            padding: 7px 20px 8px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -o-border-radius: 5px;
+            -ms-border-radius: 5px;
+            border: none; 
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+        }
+
         pre { font-size: 0.77em; }
     </style>
     <meta name="author" content="Stephan Soller" />
@@ -79,14 +98,14 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 
 <form action="<?= htmlentities($_SERVER['PHP_SELF'], ENT_COMPAT, 'UTF-8'); ?>" method="post">
     <p>
-        <input type="text" name="content" id="content" />
+        <input type="text" name="content" id="content" /><button type="submit" class=".btn">Send</button>
     </p>
     <p>
         <label>
             Name:
             <input type="text" name="name" id="name" value="Anonymous" />
         </label>
-        <button type="submit">Send</button>
+        
     </p>
 </form>
 </body>

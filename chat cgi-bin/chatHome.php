@@ -127,6 +127,7 @@ if(isset($_POST['submit'])){
 <b id="warning"> All content here is moderated by our team of counselors. Any content that is a threat to yourself or others is strictly not allowed. We also use auto-filters to filter such content. Repeated warnings will lead to a permanent ban from posting.</b>
     <br>
     <br>
+    <div> <a href ="http://stanford.edu/~kartiks2/EngineeringEmpathy/counselors.html" class="btn" id="backToTherapists"> Back to Therapists Near You </a></div>
 
                 <div>
                     <input type="text" name="subject" placeholder="Subject" />
