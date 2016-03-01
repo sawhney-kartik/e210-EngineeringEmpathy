@@ -124,7 +124,7 @@ if(isset($_POST['submit'])){
         <script type="text/x-handlebars-template" id="question-form-template">
             <form class="cf" id="question-form">
                 <h2 id="welcome">Welcome to <span>the Anxiety Community</span>!</h2>
-<b id="warning"> All content here is moderated by our team of counselors. Any content that is a threat to yourself or others is strictly not allowed. We also use auto-filters to filter such content. Repeated warnings will lead to a permanent ban from posting.</b>
+<b id="warning"> All content here is moderated by our team of counselors. Due to the inability to respond to urgent safety needs through an anonymous forum, any content that is a threat to yourself or others is strictly not allowed. We also use auto-filters to filter such content. If you are having thoughts of harming yourself or others, contact 911 or walk into your nearest emergency room.</b>
     <br>
     <br>
     <div> <a href ="http://stanford.edu/~kartiks2/EngineeringEmpathy/counselors.html" class="btn" id="backToTherapists"> Back to Therapists Near You </a></div>
@@ -148,16 +148,11 @@ if(isset($_POST['submit'])){
              <h3> Chat directly with a 24/7 counselor </h2>
             <p id="chatText"> Select one from the available counselors below.</p>
                 <form method="post">
-                    <input type="radio" class="radio" name="options" id="Ronald C. Albucher, MD" value="Ronald C. Albucher, MD"> <label class ="therapistOption"> Ronald C. Albucher, MD </label>
-                    <br>
-                    <input type="radio" class="radio" name="options" id="Laurel Zappert Banks, PsyD" value="Laurel Zappert Banks, PsyD"><label class ="therapistOption"> Laurel Zappert Banks, PsyD </label>
-                    <br>
-                    <input type="radio" class="radio" name="options" id="Naomi Brown, PhD" value="Naomi Brown, PhD"> <label class ="therapistOption"> Naomi Brown, PhD </label>
-                    <br>
-                    <input type="radio" class="radio"  name="options" id="Latoya C. Conner, PhD" value="Latoya C. Conner, PhD"><label class ="therapistOption"> Latoya C. Conner, PhD </label>
-                    <br>
-                    <input type="radio" class="radio"  name="options" id="Ariana Davidson, LCSW" value="Ariana Davidson, LCSW"> <label class ="therapistOption">Ariana Davidson, LCSW </label>
-                <br>
+                   <div id="optionsContainer"><div class="option"> <a href="https://therapists.psychologytoday.com/rms/prof_detail.php?profid=32866&sid=1455748090.4706_7374&city=Palo+Alto&state=CA&spec=334&tr=ResultsName"><img src="img/CarolWilliams.jpg"></a> <div class ="nameInfo"><input type="radio" class="radio" name="options" id="Ronald C. Albucher, MD" value="Ronald C. Albucher, MD"> <label class ="therapistOption"> Carol Williams, PhD </label></div></div>
+                    <div class="option"><a href="https://stanfordhealthcare.org/doctors/g/cheryl-gorefelton.html#summary-content"><img id="shortPic" src="img/CherylGore-Felton.png"></a> <div class ="nameInfo"><input type="radio" class="radio" name="options" id="Laurel Zappert Banks, PsyD" value="Laurel Zappert Banks, PsyD"><label class ="therapistOption"> Cheryl Gore-Felton, PhD </label></div></div>
+                    <div class="option"><a href="https://therapists.psychologytoday.com/rms/prof_detail.php?profid=65809&sid=1455748090.4706_7374&city=Palo+Alto&state=CA&spec=334&tr=ResultsPhoto"><img src="img/RobertWilliams.jpg"> </a> <div class="nameInfo"><input type="radio" class="radio" name="options" id="Naomi Brown, PhD" value="Naomi Brown, PhD"> <label class ="therapistOption"> Robert Williams, PhD </label></div></div> 
+                   <div class="option"> <a href="https://therapists.psychologytoday.com/rms/prof_detail.php?profid=103932&sid=1456803149.1314_25177&city=San+Francisco&county=San+Francisco&state=CA&spec=334&tr=ResultsPhoto"><img src="img/HeatherNelsonBrame.jpg"></a><div class="nameInfo"><input type="radio" class="radio"  name="options" id="Latoya C. Conner, PhD" value="Latoya C. Conner, PhD"><label class ="therapistOption"> Heather Nelson Brame, LCSW</label></div></div>
+                   <div class="option"> <a href="https://therapists.psychologytoday.com/rms/prof_detail.php?profid=33244&sid=1456803127.1468_25177&city=Oakland&county=Alameda&state=CA&spec=334&tr=ResultsPhoto"><img src="img/WilliamSpivey.jpg"></a> <div class="nameInfo"><input type="radio" class="radio"  name="options" id="Ariana Davidson, LCSW" value="Ariana Davidson, LCSW"> <label class ="therapistOption">William L. Spivey, PhD </label></div></div></div>
                 <input type="submit" class="btn" id="chatButton" name="submit" value="Chat now" /> 
                 </form>
         </div>
