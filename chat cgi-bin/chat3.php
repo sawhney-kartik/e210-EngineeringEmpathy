@@ -90,7 +90,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
             margin-bottom: 30px;
         }
 
-         body {
+    body {
             min-width: 650px;
         }
         #imageInfo, #titleInfo{
@@ -99,13 +99,11 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 
         #imageInfo {
             margin-right: 15px;
-            margin-bottom:10px;
         }
 
         #infoContainer {
             position: relative;
             height: 150px;
-            margin-bottom: 10px;
         }
 
         #titleInfo {
@@ -127,7 +125,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 <div id="imageInfo"><a href="https://therapists.psychologytoday.com/rms/prof_detail.php?profid=103932&sid=1456803149.1314_25177&city=San+Francisco&county=San+Francisco&state=CA&spec=334&tr=ResultsPhoto"><img src="img/HeatherNelsonBrame.jpg"></a></div>
 <div id="titleInfo"><h1>Chat with Heather Nelson Brame, LCSW</h1>
 <p class="subtitle">Up to ten messages from your previous chat session with this counselor are displayed here. <br>Happy chatting!</p></div>
-<div>
+</div>
 
 <ul id="messages">
     <li>loading…</li>
