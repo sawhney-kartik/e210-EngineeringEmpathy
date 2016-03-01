@@ -80,6 +80,34 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
             border: none; 
             font-family: 'Oswald', sans-serif;
             font-weight: 400;
+            font-size: .75em;
+        }
+        a {
+             text-decoration: none;
+        }
+        #backToForum {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+         body {
+            min-width: 650px;
+        }
+        #imageInfo, #titleInfo{
+            float: left;
+        }
+
+        #imageInfo {
+            margin-right: 15px;
+        }
+
+        #infoContainer {
+            position: relative;
+            height: 150px;
+        }
+
+        #titleInfo {
+                margin-top: 37.5px;
         }
 
         
@@ -90,10 +118,12 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 </head>
 <body>
         <script type="text/javascript" src="js/script3.js"></script>
-
-<h1>Chat with Naomi Brown, PhD</h1>
-<p class="subtitle">Upto ten messages from your previous chat session with this counselor are displayed here. Happy chatting!</p>
-
+<div id="backToForum"> <a href = "http://stanford.edu/~kartiks2/cgi-bin/chat/chatHome.php" class ="btn"> Back to Forum </a> </div>
+<div id="infoContainer">
+<div id="imageInfo"><a href="https://therapists.psychologytoday.com/rms/prof_detail.php?profid=65809&sid=1455748090.4706_7374&city=Palo+Alto&state=CA&spec=334&tr=ResultsPhoto"><img src="img/RobertWilliams.jpg"> </a></div>
+<div id="titleInfo"><h1>Chat with Robert Williams, PhD </h1>
+<p class="subtitle">Up to ten messages from your previous chat session with this counselor are displayed here. <br>Happy chatting!</p></div>
+</div>
 <ul id="messages">
     <li>loading…</li>
 </ul>

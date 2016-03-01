@@ -66,8 +66,10 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
         input#content {
             width: 35em;
         }
+
+        
      .btn {
-        margin-top: -35px;
+        margin-top: -5px;
             background-color: #1FA5AB;
             color: #fff;
             text-align: center;
@@ -80,7 +82,35 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
             border: none; 
             font-family: 'Oswald', sans-serif;
             font-weight: 400;
+            font-size: .75em;
         }
+        a {
+             text-decoration: none;
+        }
+        #backToForum {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        body {
+            min-width: 650px;
+        }
+        #imageInfo, #titleInfo{
+            float: left;
+        }
+
+        #imageInfo {
+            margin-right: 15px;
+        }
+
+        #infoContainer {
+            position: relative;
+            height: 150px;
+        }
+
+        #titleInfo {
+                margin-top: 37.5px;
+        }
+
 
         pre { font-size: 0.77em; }
     </style>
@@ -89,16 +119,20 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 </head>
 <body>
         <script type="text/javascript" src="js/script1.js"></script>
+<div id="backToForum"> <a href = "http://stanford.edu/~kartiks2/cgi-bin/chat/chatHome.php" class ="btn"> Back to Forum </a> </div>
 
-<h1>Chat with Ronald C. Albucher, MD</h1>
-<p class="subtitle">Upto ten messages from your previous chat session with this counselor are displayed here. Happy chatting!</p>
+<div id= "infoContainer">
+<div id="imageInfo"><a href="https://therapists.psychologytoday.com/rms/prof_detail.php?profid=32866&sid=1455748090.4706_7374&city=Palo+Alto&state=CA&spec=334&tr=ResultsName"><img src="img/CarolWilliams.jpg"></a></div>
+<div id="titleInfo"><h1>Chat with Carol Williams, PhD</h1>
+<p class="subtitle">Up to ten messages from your previous chat session with this counselor are displayed here. <br>Happy chatting!</p></div>
+</div>
 <ul id="messages">
     <li>loading…</li>
 </ul>
 
 <form action="<?= htmlentities($_SERVER['PHP_SELF'], ENT_COMPAT, 'UTF-8'); ?>" method="post">
     <p>
-        <input type="text" name="content" id="content" /><button type="submit" class=".btn">Send</button>
+        <input type="text" name="content" id="content" /><button type="submit" class="btn">Send</button>
     </p>
     <p>
         <label>

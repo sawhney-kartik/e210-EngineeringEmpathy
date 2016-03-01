@@ -24,9 +24,6 @@ body {
 
 }
 
-#chatButton {
-    margin-top: 15px;
-}
 
 #warning {
     font-family: 'Josefin Sans', sans-serif;
@@ -157,12 +154,33 @@ header h1 a {
     height: 100%;
 }
 
+.option {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+#chatButton {
+    margin-top: 10px;
+}
+
+#shortPic {
+    height: 150px;
+}
 
 
 p#chatText {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 
 }
+ #optionsContainer{
+    text-align: center;
+    width: 900px;
+    height: 175px;
+    overflow: scroll;
+    margin-bottom: 0px;
+}
+
 
 #navigation {
     float: left;
@@ -171,6 +189,7 @@ p#chatText {
     background: #fff;
     box-shadow: 2px 0px 10px #dfdfdf;
     border-right: 1px solid #ddd;
+    height: 840px;
 }
 
 #right-pane {

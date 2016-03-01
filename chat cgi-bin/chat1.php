@@ -80,8 +80,39 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
             border: none; 
             font-family: 'Oswald', sans-serif;
             font-weight: 400;
+            font-size: .75em;
         }
         
+        a {
+             text-decoration: none;
+        }
+        #backToForum {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+         body {
+            min-width: 650px;
+        }
+        #imageInfo, #titleInfo{
+            float: left;
+        }
+
+        #imageInfo {
+            margin-right: 15px;
+        }
+
+        #infoContainer {
+            position: relative;
+            height: 150px;
+        }
+
+        #titleInfo {
+                margin-top: 37.5px;
+        }
+        #shortPic {
+            height: 150px;
+        }
         pre { font-size: 0.77em; }
     </style>
     <meta name="author" content="Stephan Soller" />
@@ -90,9 +121,13 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 <body>
         <script type="text/javascript" src="js/script2.js"></script>
 
-<h1>Chat with Laurel Zappert Banks, PsyD</h1>
-<p class="subtitle">Upto ten messages from your previous chat session with this counselor are displayed here. Happy chatting!</p>
+<div id="backToForum"> <a href = "http://stanford.edu/~kartiks2/cgi-bin/chat/chatHome.php" class ="btn"> Back to Forum </a> </div>
 
+<div id="infoContainer">
+<div id="imageInfo"> <a href="https://stanfordhealthcare.org/doctors/g/cheryl-gorefelton.html#summary-content"><img id="shortPic" src="img/CherylGore-Felton.png"></a></div>
+<div id="titleInfo"><h1>Chat with Cheryl Gore-Felton, PhD</h1>
+<p class="subtitle">Up to ten messages from your previous chat session with this counselor are displayed here.<br> Happy chatting!</p></div>
+</div>
 <ul id="messages">
     <li>loading…</li>
 </ul>
