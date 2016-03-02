@@ -24,6 +24,9 @@ body {
 
 }
 
+#chatnowButton {
+    clear: both;
+}
 
 #warning {
     font-family: 'Josefin Sans', sans-serif;
