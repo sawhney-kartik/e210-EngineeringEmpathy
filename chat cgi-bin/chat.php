@@ -51,7 +51,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
                 font-weight: 400; }
         p.subtitle { margin: 0; padding: 0 0 0 0.125em; font-size: 0.77em; color: gray; }
         
-        ul#messages { overflow: auto; height: 15em; margin: 1em 0; padding: 0 3px; list-style: none; border: 1px solid gray; }
+        ul#messages { overflow: auto; height: 21em; margin: 1em 0; padding: 0 3px; list-style: none; border: 1px solid gray; }
         ul#messages li { margin: 0.35em 0; padding: 0; }
         ul#messages li small { display: block; font-size: 0.59em; color: gray; }
         ul#messages li.pending { color: #aaa; }
@@ -62,14 +62,11 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
         form p input#name { width: 10em; }
         form p button { position: absolute; top: 0; right: -0.5em; }
         
-         ul#messages, form p { width: 40em; }
-        input#content {
-            width: 35em;
-        }
-
+         ul#messages, form p { width: 80%; }
+      
         
      .btn {
-        margin-top: -5px;
+        height: 86px;
             background-color: #1FA5AB;
             color: #fff;
             text-align: center;
@@ -110,6 +107,30 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
         #titleInfo {
                 margin-top: 37.5px;
         }
+        #totalBody {
+            height: 100%;
+            width:100%;
+        }
+      html, body {
+        width: 100%;
+         height: 100%;
+        
+        }
+
+        .info {
+            position: relative;
+            height: auto;
+            width: 100%;
+        }
+        ul#messages {
+            width: 80%;
+     
+        }
+
+        #content {
+            height: 5em;
+            width: 90%;
+        }
 
 
         pre { font-size: 0.77em; }
@@ -118,6 +139,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 <body>
+<div id="totalBody">
         <script type="text/javascript" src="js/script1.js"></script>
 <div id="backToForum"> <a href = "http://stanford.edu/~kartiks2/cgi-bin/chat/chatHome.php" class ="btn"> Back to Forum </a> </div>
 
@@ -126,6 +148,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 <div id="titleInfo"><h1>Chat with Carol Williams, PhD</h1>
 <p class="subtitle">Up to ten messages from your previous chat session with this counselor are displayed here. <br>Happy chatting!</p></div>
 </div>
+
 <ul id="messages">
     <li>loading…</li>
 </ul>
@@ -142,5 +165,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
         
     </p>
 </form>
+
+</div>
 </body>
 </html>
