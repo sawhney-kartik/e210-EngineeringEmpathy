@@ -123,8 +123,8 @@ if(isset($_POST['submit'])){
         <!-- template to display question form in #main-panel tag -->
         <script type="text/x-handlebars-template" id="question-form-template">
             <form class="cf" id="question-form">
-                <h2 id="welcome">Welcome to <span>the Anxiety Community</span>!</h2>
-<b id="warning"> All content here is moderated by our team of counselors. Due to the inability to respond to urgent safety needs through an anonymous forum, any content that is a threat to yourself or others is strictly not allowed. We also use auto-filters to filter such content. If you are having thoughts of harming yourself or others, contact 911 or walk into your nearest emergency room.</b>
+                <h2 id="welcome">Welcome to <span>the African American Anxiety Community</span>!</h2>
+<b id="warning"> This community is specifically for those who identify as African American and are experiencing anxiety symptoms. <br><br> All content here is moderated by our team of counselors. Due to the inability to respond to urgent safety needs through an anonymous forum, any content that is a threat to yourself or others is strictly not allowed. We also use auto-filters to filter such content. If you are having thoughts of harming yourself or others, contact 911 or walk into your nearest emergency room.</b>
     <br>
     <br>
     <div> <a href ="http://stanford.edu/~kartiks2/EngineeringEmpathy/counselors.html" class="btn" id="backToTherapists"> Back to Therapists Near You </a></div>
