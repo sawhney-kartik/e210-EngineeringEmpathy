@@ -51,7 +51,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
                 font-weight: 400; }
         p.subtitle { margin: 0; padding: 0 0 0 0.125em; font-size: 0.77em; color: gray; }
         
-        ul#messages { overflow: auto; height: 21em; margin: 1em 0; padding: 0 3px; list-style: none; border: 1px solid gray; }
+        ul#messages { overflow: auto; height: 70em; margin: 1em 0; padding: 0 3px; list-style: none; border: 1px solid gray; }
         ul#messages li { margin: 0.35em 0; padding: 0; }
         ul#messages li small { display: block; font-size: 0.59em; color: gray; }
         ul#messages li.pending { color: #aaa; }
@@ -66,6 +66,8 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
       
         
      .btn {
+	margin-left: 20px;
+	margin-right: -150px;
         height: 86px;
             background-color: #1FA5AB;
             color: #fff;
@@ -87,6 +89,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
         #backToForum {
             margin-top: 10px;
             margin-bottom: 30px;
+	margin-left: -20px;
         }
         body {
             min-width: 650px;
@@ -123,13 +126,14 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
             width: 100%;
         }
         ul#messages {
-            width: 80%;
+            width: 95%;
+	height: 70em;
      
         }
 
         #content {
-            height: 5em;
-            width: 90%;
+	height: 5em;
+            width: 107%;
         }
 
 
